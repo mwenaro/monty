@@ -4,7 +4,7 @@
 * pall - for printing all elements
 *
 *@stack: the list
-*
+*@line_cnt: line count
 *Returns: nothing
 */
 
