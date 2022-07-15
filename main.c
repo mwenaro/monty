@@ -26,7 +26,6 @@ void file_error(char *argv)
 	exit(EXIT_FAILURE);
 }
 
-/*int status = 0;*/
 
 /**
  * main- entry point
@@ -36,7 +35,6 @@ void file_error(char *argv)
  */
 int main(int argc, char **argv)
 {
-	int status = 0;
 	FILE *file; /*File that wee neeed to read*/
 	size_t buf_len = 0; /*Lenght of the buffer*/
 	char *buffer = NULL; /*to store each line of the file*/
