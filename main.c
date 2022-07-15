@@ -1,10 +1,11 @@
+#define  _GNU_SOURCE
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include "monty.h"
 
 /**
- * error_usage: prints usage message and exits
+ * error_usage -  prints usage message and exits
  *
  * Return: nothing
  */
@@ -15,8 +16,8 @@ void error_usage(void)
 }
 
 /**
- * error_usage: prints file error message and exits
- *
+ * file_error -  prints file error message and exits
+ *@argv: arguemts
  * Return: nothing
  */
 void file_error(char *argv)
@@ -25,14 +26,17 @@ void file_error(char *argv)
 	exit(EXIT_FAILURE);
 }
 
-int status = 0;
+/*int status = 0;*/
+
 /**
- * main: entry point
- *
+ * main- entry point
+ *@argc: num of args
+ *@argv: args
  * Return: nothing
  */
 int main(int argc, char **argv)
 {
+	int status = 0;
 	FILE *file; /*File that wee neeed to read*/
 	size_t buf_len = 0; /*Lenght of the buffer*/
 	char *buffer = NULL; /*to store each line of the file*/
